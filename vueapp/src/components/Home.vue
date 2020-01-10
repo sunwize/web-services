@@ -94,10 +94,10 @@ export default {
       if (this.search === '') {
         return
       }
-      axios.get('http://127.0.0.1:8080/hal/coauthors/' + this.search).then(resp => {
+      axios.get('https://halarxiv.azurewebsites.net/hal/coauthors/' + this.search).then(resp => {
         this.hal = resp.data
       })
-      axios.get('http://127.0.0.1:8080/arxiv/coauthors/' + this.search).then(resp => {
+      axios.get('https://halarxiv.azurewebsites.net/arxiv/coauthors/' + this.search).then(resp => {
         this.arxiv = resp.data
       })
     },
@@ -108,10 +108,10 @@ export default {
       if (this.search === '') {
         return
       }
-      axios.get('http://127.0.0.1:8080/hal/sources/' + this.search).then(resp => {
+      axios.get('https://halarxiv.azurewebsites.net/hal/sources/' + this.search).then(resp => {
         this.hal = resp.data
       })
-      axios.get('http://127.0.0.1:8080/arxiv/sources/' + this.search).then(resp => {
+      axios.get('https://halarxiv.azurewebsites.net/arxiv/sources/' + this.search).then(resp => {
         this.arxiv = resp.data
       })
     }
