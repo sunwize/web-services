@@ -104,8 +104,6 @@ def arxiv_sources(author):
         resp.append(d)
     return jsonify(resp)
 
-app.run(host="127.0.0.1",port=8080)
-
 
 
 
